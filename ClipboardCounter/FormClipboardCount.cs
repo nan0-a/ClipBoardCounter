@@ -50,10 +50,10 @@ namespace ClipboardCounter
                 // + "\nTwitter: " + threads.ToString()
                 // + "(-" + bytes_left.ToString() + "B)";
 
-                char_count_label.Text = cboard_cont.Length.ToString()
-                    + " : " + cboard_cont_noline.Length.ToString()
-                    + " : " + threads.ToString()
-                    + " : -" + bytes_left.ToString() + "B";
+                char_count_label.Text = "文字数（改行有）：" + cboard_cont.Length.ToString()
+                    + "\n文字数（改行無）：" + cboard_cont_noline.Length.ToString()
+                    + "\nツイート数：" + threads.ToString()
+                    + " (" + bytes_left.ToString() + "B)";
             }
             else
             {

@@ -29,39 +29,38 @@ namespace ClipboardCounter
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.char_count_label = new System.Windows.Forms.Label();
-            this.clipboard_check_fire = new System.Windows.Forms.Timer(this.components);
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            char_count_label = new System.Windows.Forms.Label();
+            clipboard_check_fire = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
             // 
             // char_count_label
             // 
-            this.char_count_label.AutoSize = true;
-            this.char_count_label.Location = new System.Drawing.Point(12, 9);
-            this.char_count_label.Name = "char_count_label";
-            this.char_count_label.Size = new System.Drawing.Size(62, 15);
-            this.char_count_label.TabIndex = 0;
-            this.char_count_label.Text = "Not A Text";
+            char_count_label.AutoSize = true;
+            char_count_label.Location = new System.Drawing.Point(12, 9);
+            char_count_label.Name = "char_count_label";
+            char_count_label.Size = new System.Drawing.Size(62, 15);
+            char_count_label.TabIndex = 0;
+            char_count_label.Text = "Not A Text";
             // 
             // clipboard_check_fire
             // 
-            this.clipboard_check_fire.Enabled = true;
-            this.clipboard_check_fire.Tick += new System.EventHandler(this.ClipboardCheckFireTick);
+            clipboard_check_fire.Enabled = true;
+            clipboard_check_fire.Tick += ClipboardCheckFireTick;
             // 
             // FormClipBoardCount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(160, 32);
-            this.Controls.Add(this.char_count_label);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "FormClipBoardCount";
-            this.Text = "ClipBoardCount";
-            this.TopMost = true;
-            this.Load += new System.EventHandler(this.FormClipboardCounterLoad);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(160, 83);
+            Controls.Add(char_count_label);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            Name = "FormClipBoardCount";
+            Text = "ClipBoardCount";
+            TopMost = true;
+            Load += FormClipboardCounterLoad;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
